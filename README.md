@@ -23,7 +23,7 @@ To run the Bitcoin transaction parser, you need to have a Bitcoin node running o
 
    To allow communication with the Bitcoin node, enable the RPC interface by modifying the `bitcoin.conf` configuration file. Add the following lines:
 
-   ```
+   ```bash
     # Daemon Options
     server=1
     fallbackfee=0.00072
@@ -49,7 +49,7 @@ To run the Bitcoin transaction parser, you need to have a Bitcoin node running o
 
    After making changes to the `bitcoin.conf` file, restart Bitcoin Core for the changes to take effect. Run the following to start Bitcoin Core locally:
 
-   ```
+   ```bash
    bitcoind
    ```
 
@@ -76,6 +76,16 @@ cargo run
 ```
 
 This command will compile and execute the Bitcoin transaction parser.
+
+## Running Tests
+
+You can run the tests for this project using the following command:
+
+```bash
+cargo test
+```
+
+The `cargo test` command will compile the code and run all tests in this project, providing output regarding the success or failure of each test case.
 
 ## Contributing
 
